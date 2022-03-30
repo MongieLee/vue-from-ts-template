@@ -1,14 +1,16 @@
 <template>
-  <router-view />
+  <div>404</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'app'
+  name: 'NotFound'
 })
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
+.container {
+}
 </style>

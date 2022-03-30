@@ -16,5 +16,13 @@ module.exports = {
         path.resolve(__dirname, './src/theme/variables.less')
       ]
     }
+  },
+  devServer: {
+    proxy: {
+      '/boss': {
+        target: 'http://devServer.com',
+        changeOrigin: true
+      }
+    }
   }
 }
